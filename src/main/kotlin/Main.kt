@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val herbivores1 = Herbivores("Заяц", "луг","травой")
     val herbivores2 = Herbivores("Косуля", "лес","ветками")
     val predator1 = Predators("Волк", "лес", "стаей")
@@ -14,12 +14,7 @@ fun main(args: Array<String>) {
 
     val str = list.joinToString(separator)
 
-    if (list.isNullOrEmpty()) {
-        println("список пустой")
-    }
-    else {
-        println(str)
-    }
+    println(str)
 
 
 }
